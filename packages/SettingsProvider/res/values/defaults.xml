@@ -34,6 +34,9 @@
     <!-- Default screen brightness, from 0 to 255.  102 is 40%. -->
     <integer name="def_screen_brightness">102</integer>
     <bool name="def_screen_brightness_automatic_mode">false</bool>
+
+    <!-- Default for Settings.System.MIN_REFRESH_RATE; empty leaves it unset -->
+    <string name="def_min_refresh_rate" translatable="false"></string>
     <fraction name="def_window_animation_scale">100%</fraction>
     <fraction name="def_window_transition_scale">100%</fraction>
     <bool name="def_haptic_feedback">true</bool>

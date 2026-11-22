@@ -2121,6 +2121,12 @@ class DatabaseHelper extends SQLiteOpenHelper {
             loadBooleanSetting(stmt, Settings.System.SCREEN_BRIGHTNESS_MODE,
                     R.bool.def_screen_brightness_automatic_mode);
 
+            final String minRefreshRate =
+                    mContext.getResources().getString(R.string.def_min_refresh_rate);
+            if (!TextUtils.isEmpty(minRefreshRate)) {
+                loadSetting(stmt, Settings.System.MIN_REFRESH_RATE, minRefreshRate);
+            }
+
             loadBooleanSetting(stmt, Settings.System.ACCELEROMETER_ROTATION,
                     R.bool.def_accelerometer_rotation);
 
